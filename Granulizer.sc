@@ -39,21 +39,14 @@ Granulizer : Object {
 			this.buffers=0!8;
 			this.buffer =0;
 			// fml
-			this.buffers[0] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/choir/1.wav", channels:[0]);
-
-			this.buffers[1] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/soulvoc/Soul Vocal 100BPM C  01.wav", channels:[0]);
-
-			this.buffers[2] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/soulvoc/Soul Vocal 100BPM C  02.wav", channels:[0]);
-
-			this.buffers[3] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/soulvoc/Soul Vocal 100BPM C  03.wav", channels:[0]);
-
-			this.buffers[4] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/soulvoc/Soul Vocal 100BPM C  04.wav", channels:[0]);
-
-			this.buffers[5] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/soulvoc/Soul Vocal 100BPM C  05.wav", channels:[0]);
-
-			this.buffers[6] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/soulvoc/Soul Vocal 100BPM C  06.wav", channels:[0]);
-
-			this.buffers[7] = Buffer.readChannel(Server.default, "/home/jamie/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples/soulvoc/Soul Vocal 100BPM C  07.wav", channels:[0]);
+			this.buffers[0] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/1.wav", channels:[0]);
+			this.buffers[1] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/2.wav", channels:[0]);
+			this.buffers[2] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/3.wav", channels:[0]);
+			this.buffers[3] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/4.wav", channels:[0]);
+			this.buffers[4] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/5.wav", channels:[0]);
+			this.buffers[5] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/6.wav", channels:[0]);
+			this.buffers[6] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/7.wav", channels:[0]);
+			this.buffers[7] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/8.wav", channels:[0]);
 			"Sample buffers loaded.".postln;
 			this.synthDef();
 			"SynthDef loaded.".postln;
