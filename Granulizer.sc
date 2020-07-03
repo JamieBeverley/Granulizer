@@ -39,14 +39,14 @@ Granulizer : Object {
 			this.buffers=0!8;
 			this.buffer =0;
 			// fml
-			this.buffers[0] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/1.wav", channels:[0]);
-			this.buffers[1] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/2.wav", channels:[0]);
-			this.buffers[2] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/3.wav", channels:[0]);
-			this.buffers[3] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/4.wav", channels:[0]);
-			this.buffers[4] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/5.wav", channels:[0]);
-			this.buffers[5] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/6.wav", channels:[0]);
-			this.buffers[6] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/7.wav", channels:[0]);
-			this.buffers[7] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Granulizer/samples/8.wav", channels:[0]);
+			this.buffers[0] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/1.wav", channels:[0]);
+			this.buffers[1] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/2.wav", channels:[0]);
+			this.buffers[2] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/3.wav", channels:[0]);
+			this.buffers[3] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/4.wav", channels:[0]);
+			this.buffers[4] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/5.wav", channels:[0]);
+			this.buffers[5] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/6.wav", channels:[0]);
+			this.buffers[6] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/7.wav", channels:[0]);
+			this.buffers[7] = Buffer.readChannel(Server.default, Platform.userAppSupportDir++"/Extensions/Granulizer/samples/8.wav", channels:[0]);
 			"Sample buffers loaded.".postln;
 			this.synthDef();
 			"SynthDef loaded.".postln;
